@@ -1,0 +1,2 @@
+rootProject.name='AndroidPush'
+include ':app', ':push_core'

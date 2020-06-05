@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ulife_channel_id">ulifeChannel</string>
+    <string name="ulife_channel_name">U享车生活</string>
+    <string name="ulife_group_id">ulifeChannel_01</string>
+    <string name="ulife_group_name">通知消息</string>
+</resources>
