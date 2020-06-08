@@ -31,5 +31,5 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation project(path: ':push_core')
-    implementation files('libs/com.heytap.msp.aar')
+    api files('libs/com.heytap.msp.aar')
 }

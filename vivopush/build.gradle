@@ -31,5 +31,5 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation project(path: ':push_core')
-    implementation files('libs/vivo_pushsdk-v2.9.0.0.aar')
+    api files('libs/vivo_pushsdk-v2.9.0.0.aar')
 }
