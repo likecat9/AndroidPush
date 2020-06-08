@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.test.pushlib.jiguang">
+
+    <application>
+        <meta-data
+            android:name="pushlib_jiguang"
+            android:value="com.lc9.pushlib.jiguang.JIPushClient" />
+
+        <service
+            android:name="com.lc9.pushlib.jiguang.JPushService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.lc9.pushlib.jiguang.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="com.example.myapplication" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
